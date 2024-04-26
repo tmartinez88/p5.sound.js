@@ -4,8 +4,11 @@ This repository was started during the 2023 p5.js sound fellowship. Please read 
 
 This repository will soon replace the previous version of the p5.sound library, which is currently hosted at [https://github.com/processing/p5.js-sound](https://github.com/processing/p5.js-sound).
 
-p5.sound Fellow 2023: aarón montoya-moraga(@[montoyamoraga](https://github.com/montoyamoraga)),
+p5.sound Fellow 2023: aarón montoya-moraga(@[montoyamoraga](https://github.com/montoyamoraga))
+
 p5.Sound Fellow Mentor 2023: Kristin Galvin (@[blechdom](https://github.com/blechdom))
+
+consultant: Tommy Martinez(@[tmartinez88](https://github.com/tmartinez88))
 
 ## Scope of the project
 
@@ -44,16 +47,17 @@ Please let us know if you find any bugs or issues!
 
 | Name of class | Previous name | Dependencies | Tone.js dependencies |
 | :------------ | :------------ | :----------- | :------------------- |
-| BiquadFilter  | Filter        | Effect       | TODO                 |
-| Delay         | -             | Effect       | TODO                 |
+| BiquadFilter  | Filter        | Effect       |                      |
+| Delay         | -             | Effect       |                      |
+| Reverb        | -             | Effect       | TODO                 |
 
 ### Utilities
 
 | Name of class | Previous name | Dependencies | Tone.js dependencies |
 | :------------ | :------------ | :----------- | :------------------- |
 | AnalyzerFFT   | FFT           | audioContext | none                 |
-| Gain          | FFT           | audioContext | none                 |
-| Envelope      | FFT           | audioContext | none                 |
+| Gain          | Gain          | audioContext | none                 |
+| Envelope      | Envelope      | audioContext | none                 |
 
 ### Currently broken / in progress
 
@@ -81,13 +85,13 @@ After a fruitful discussion with the Tone.js team, we are keeping Tone.js as a d
 
 ## Build instructions
 
-To install the dependencies for building, please run this command.
+To install the dependencies for building, run this command.
 
 ```bash
 npm install
 ```
 
-To build the library, please run this command.
+To build the library, run this command.
 
 ```bash
 npm run build

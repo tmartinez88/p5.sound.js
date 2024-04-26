@@ -137,7 +137,7 @@ class Delay extends Effect {
    *  Set the delay (echo) time, in seconds. Usually this value will be
    *  a floating point number between 0.0 and 1.0.
    *
-   *  @method  delayTime
+   *  @method delayTime
    *  @for Delay
    *  @param {Number} delayTime Time (in seconds) of the delay
    *  @example
@@ -155,6 +155,7 @@ class Delay extends Effect {
       t.connect(this.leftDelay.delayTime);
       t.connect(this.rightDelay.delayTime);
     } else {
+      console.log('TODO EXAMPLE');
       this.leftDelay.delayTime.cancelScheduledValues(audioContext.currentTime);
       this.rightDelay.delayTime.cancelScheduledValues(audioContext.currentTime);
       this.leftDelay.delayTime.linearRampToValueAtTime(

@@ -1,5 +1,5 @@
 module.exports = {
-  // amplitudeProcessor: 'amplitude-processor'
-  // recorderProcessor: 'recorder-processor',
+  amplitudeProcessor: 'amplitude-processor',
+  recorderProcessor: 'recorder-processor',
   soundFileProcessor: 'sound-file-processor'
 };
